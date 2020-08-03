@@ -1,5 +1,5 @@
 # RandomDotOrgAPI
-Access the API (signed or basic) at Random.org. See the API features here: <a href="https://api.random.org/features"></a>
+Access the API (signed or basic) at Random.org See the API features here: https://api.random.org/features
 
 Use various functions from https://random.org (q.v.).
 
