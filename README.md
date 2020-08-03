@@ -1,5 +1,5 @@
 # RandomDotOrgAPI.jl
-Access the API at Random.org. Either <b>signed</b> or <b>basic</b> API will work with a parameter, <b>apiType</b>.
+Access the API at Random.org. Either <b>signed</b> or <b>basic</b> API will work with a parameter, <b>apiType</b>. If the apiType is set to "signed", the functions will generate requests with <b>Signed</b> after the word <i>generate</i>. For example, A signed API request for UUIDs will be sent with <i>generateSignedUUIDs</i>.
 
 For information on each API:
   <b>signed</b> [https://api.random.org/json-rpc/2/signed] (requires registration with RANDOM.ORG)
@@ -17,8 +17,8 @@ From the RANDOM.ORG <a href="https://www.random.org/faq">FAQ (Q4.1)</a>:
 ## Current functions
 - <b>getUsage()</b>: obtain current bit quota for your IP.
 - <b>checkUsage()</b>: check if quota is non-zero.
-- <b>getResult()</b>: get a stored signed result from RDO (stored >= 24 hours)
-- <b>verifySignature()</b>: obtain signature verification for a previously signed result from RDO
+- <b>getResult()</b>: get a stored signed result from RDO (stored >= 24 hours) <i>(signed API)</i>
+- <b>verifySignature()</b>: obtain signature verification for a previously signed result from RDO  <i>(signed API)</i>
 - <b>generateIntegers()</b>: obtain integers.
 - <b>generateIntegerSequences()</b>: obtain randomized sequences of integers 1..N
 - <b>generateStrings()</b>: obtain random strings of characters (upper/lower case letters, digits)
