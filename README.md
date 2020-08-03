@@ -2,8 +2,8 @@
 Access the API at Random.org. Either <b>signed</b> or <b>basic</b> API will work with a parameter, <b>apiType</b>. If the apiType is set to "signed", the functions will generate requests with <i>Signed</i> after the word <i>generate</i> for the method. For example, a signed API request for UUIDs will be sent with method <i>generateSignedUUIDs</i>.
 
 For information on each API:
-  <b>signed</b> [https://api.random.org/json-rpc/2/signed] (requires registration with RANDOM.ORG)
-  <b>basic</b> [https://api.random.org/json-rpc/2/basic])
+  <p><b>signed</b> [https://api.random.org/json-rpc/2/signed] (requires registration with RANDOM.ORG)
+  <p><b>basic</b> [https://api.random.org/json-rpc/2/basic])
 
 For information about signatures, see this page: https://api.random.org/signatures
 
