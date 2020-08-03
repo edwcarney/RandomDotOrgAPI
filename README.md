@@ -9,8 +9,6 @@ For information about signatures, see this page: https://api.random.org/signatur
 
 See the overview of API features here: https://api.random.org/features
 
-Use various API functions from https://random.org (q.v.)
-
 From the RANDOM.ORG <a href="https://www.random.org/faq">FAQ (Q4.1)</a>:
 <blockquote>The RANDOM.ORG setup uses an array of radios that pick up atmospheric noise. Each radio generates approximately 12,000 bits per second. The random bits produced by the radios are used as the raw material for all the different generators you see on RANDOM.ORG. Each time you use one of the generators, you spend some bits. By enforcing a limit on the number of bits you can use per day, the quota system prevents any one person from hogging all the numbers. (Believe us, this was a big problem before we implemented the quota system.)</blockquote>
 
