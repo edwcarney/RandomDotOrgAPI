@@ -1,4 +1,4 @@
-# RandomDotOrgAPI
+# RandomDotOrgAPI.jl
 Access the API (signed [https://api.random.org/json-rpc/2/signed] or basic [https://api.random.org/json-rpc/2/basic]) at Random.org. For information about signatures, see this page: https://api.random.org/signatures
 
 See the overview of API features here: https://api.random.org/features
