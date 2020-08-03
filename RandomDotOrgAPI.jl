@@ -29,6 +29,7 @@ using OrderedCollections
 const url = "https://api.random.org/json-rpc/2/invoke"
 # enter your RANDOM.ORG API key (requires registration)
 const myapikey = "00000000-0000-0000-0000-000000000000"
+# basic API key is all zeros
 const myapikeyzeros = "00000000-0000-0000-0000-000000000000"
 
 
