@@ -21,9 +21,6 @@ Github repository at: https://github.com/edwcarney/RandomDotOrg
 
 using HTTP
 using JSON
-using OrderedCollections
-
-
 # using OrderedCollections
 
 const url = "https://api.random.org/json-rpc/2/invoke"
@@ -37,7 +34,9 @@ export  getUsage, checkUsage, getResult, verifySignature, generateIntegers, gene
         generateDecimalFractions, generateUUIDs, generateBlobs
 
 """
-    Get the current bit quota from Random.org
+    getUsage(; apiType = "basic")
+
+Get the current bit quota from Random.org
 """
 function getUsage(; apiType = "basic")
     getUsage1 = Dict(
@@ -62,10 +61,10 @@ end;
 
 """
 
-checkUsage(minimum = 500::Number)
+    checkUsage(minimum = 500::Number)
 
-    Test for sufficient quota to insure response. This should be set to match
-    user's needs.
+Test for sufficient quota to insure response. This should be set to match
+user's needs.
 """
 function checkUsage(minimum = 500::Number)
 
@@ -96,7 +95,7 @@ function getResult(serialNumber::Int)
 end;
 
 """
-verifySignature(result::Dict)
+    verifySignature(result::Dict)
 
 Verify a signature from a previous signed request.
 
@@ -130,7 +129,7 @@ function verifySignature(result::Dict)
 end
 
 """
-generateIntegers(n = 100::Number, min = 1, max = 20, base = 10, parse=true, check = true, replace = true, apitype = "basic")
+    generateIntegers(n = 100::Number, min = 1, max = 20, base = 10, parse=true, check = true, replace = true, apitype = "basic")
 
 Get `n` random integers on the interval `[min, max]` as strings
 in one of 4 `base` values--[binary (2), octal (8), decimal (10), or hexadecimal (16)]
@@ -213,7 +212,7 @@ end
 
 
 """
-generateIntegerSequences(n = 1; min = 1::Number, max = 20::Number, col = 1, check = true, replace=true, apiType="basic")
+    generateIntegerSequences(n = 1; min = 1::Number, max = 20::Number, col = 1, check = true, replace=true, apiType="basic")
 
 Get a randomized interval `[min, max]`. Returns (max - min + 1) randomized integers
 All numbers are returned as strings (as Random.org sends them).
@@ -288,8 +287,7 @@ function generateIntegerSequences(n = 10::Number, length = 10::Number; min = 1::
 end
 
 """
-
-generateStrings(n=10::Number, length=5, characters="abcdefghijklmnopqrstuvwxyz"; check=true)
+    generateStrings(n=10::Number, length=5, characters="abcdefghijklmnopqrstuvwxyz"; check=true)
 
 Get `n` random strings of length `len`
 
@@ -362,7 +360,7 @@ end
 
 """
 
-generateGaussians(n = 10::Number, mean = 0.0, stdev = 1.0, digits = 10; check = true, replace = true, apiType = "basic")
+    generateGaussians(n = 10::Number, mean = 0.0, stdev = 1.0, digits = 10; check = true, replace = true, apiType = "basic")
 
 Get n numbers from a Gaussian distribution with `mean` and `stdev`.
 Returns strings in `dec` decimal places.
@@ -422,7 +420,7 @@ function generateGaussians(n = 10::Number, mean = 0.0, stdev = 1.0, digits = 10;
 end
 
 """
-generateDecimalFractions(n = 10::Number; digits = 5, check = true, replace = true)
+    generateDecimalFractions(n = 10::Number; digits = 5, check = true, replace = true)
 
 Get n decimal fractions on the interval (0,1).
 Returns strings in `digits` decimal places.
@@ -475,7 +473,7 @@ function generateDecimalFractions(n = 10, digits = 10; check=true, replace = tru
 end
 
 """
-generateGaussians(n = 10::Number, mean = 0.0, stdev = 1.0, digits = 10; check = true, replace = true, apiType = "basic")
+    generateGaussians(n = 10::Number, mean = 0.0, stdev = 1.0, digits = 10; check = true, replace = true, apiType = "basic")
 
 Get n numbers from a Gaussian distribution with `mean` and `stdev`.
 Returns strings in `dec` decimal places.
@@ -535,7 +533,7 @@ function generateGaussians(n = 10::Number, mean = 0.0, stdev = 1.0, digits = 10;
 end
 
 """
-generateUUIDs(n = 10::Number; check=true, apiType = "basic")
+    generateUUIDs(n = 10::Number; check=true, apiType = "basic")
 
 Get n UUIDs.
 Returns n UUIDs as strings.
@@ -582,7 +580,7 @@ function generateUUIDs(n = 10::Number; check=true, apiType = "basic")
 end
 
 """
-generateBlobs(n = 10::Number, size = 80; format = 'base64', check = true, apiType = "basic")
+    generateBlobs(n = 10::Number, size = 80; format = 'base64', check = true, apiType = "basic")
 
 Get n Blobs.
 Returns n Blobs as strings in format requested.
