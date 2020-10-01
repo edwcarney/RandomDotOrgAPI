@@ -25,7 +25,7 @@ From the RANDOM.ORG <a href="https://www.random.org/faq">FAQ (Q4.1)</a>:
 - <b>generateUUIDs()</b>: obtain random bytes in various formats
 - <b>generateBlobs()</b>: generate bit blobs of sizes in multiples of 8 in base64 or hex
 
-Simply include the file with <b>include("RandomDotOrgAPI.jl")</b>. You may also place the module in a folder entitled <i>RandomDotOrgAPI/src</i> and add the folder to your Julia LOAD_PATH.
+Simply include the file with <b>include("RandomDotOrgAPI.jl")</b>. You may also place the package files in a folder entitled <i>RandomDotOrgAPI</i> and add the folder to your Julia LOAD_PATH.
 
 See https://en.wikibooks.org/wiki/Introducing_Julia/Modules_and_packages#How_does_Julia_find_a_module? for information on custom modules.
 
