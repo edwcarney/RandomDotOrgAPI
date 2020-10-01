@@ -1,5 +1,5 @@
 # RandomDotOrgAPI.jl
-Access the API at Random.org. Either <b>signed</b> or <b>basic</b> API will work with a parameter, <b>apiType</b>. If the apiType is set to "signed", the functions will generate requests with <i>Signed</i> after the word <i>generate</i> for the method. For example, a signed API request for UUIDs will be sent with method <i>generateSignedUUIDs</i>.
+Access the API at Random.org. Either <b>signed</b> or <b>basic</b> API will work with a parameter, <b>apiType</b>. If the apiType is set to "signed", the functions will generate requests with <i>Signed</i> after the word <i>generate</i> for the method. For example, a signed API request for UUIDs will be sent with method <i>generateSignedUUIDs</i>. Modify the <b>myapikey</b> variable to contain your API key (requires registration with RANDOM.ORG).
 
 For information on each API:
   <p><b>signed</b> [https://api.random.org/json-rpc/2/signed] (requires registration with RANDOM.ORG)
